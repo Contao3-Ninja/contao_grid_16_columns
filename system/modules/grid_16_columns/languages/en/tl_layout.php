@@ -1,4 +1,18 @@
-<?php 
+<?php  
+
+/**
+ * Contao Open Source CMS
+ * Copyright (C) 2005-2012 Leo Feyer
+ *
+ * Formerly known as TYPOlight Open Source CMS.
+ *
+ * PHP version 5
+ * @copyright  Glen Langer 2012
+ * @author     Glen Langer
+ * @package    grid_16_columns
+ * @license    LGPL
+ * @filesource
+ */
 
 $GLOBALS['TL_LANG']['tl_layout']['responsive-1140-16-percent.css'][0] = 'Responsive grid, percent, 1140px-16';
 $GLOBALS['TL_LANG']['tl_layout']['responsive-1140-16-percent.css'][1] = 'Adds a responsive 16-column percental grid with 1140px, that is triggered by the CSS classes "grid1" to "grid16" and "offset1" to "offset15".'; 

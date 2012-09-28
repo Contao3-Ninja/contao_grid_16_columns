@@ -14,4 +14,4 @@
  * @filesource
  */
 
-$GLOBALS['TL_HOOKS']['loadDataContainer'][] = array('Grid1140\Grid1140Dca', 'LoadDataContainerGrid1140');
+$GLOBALS['TL_LANG']['MOD']['grid_16_columns'] = array('Contao Grid with 16 columns','Contao pixel and percent grid with 16 columns');
