@@ -1,0 +1,82 @@
+#!/bin/bash
+
+##
+# Usage
+##
+usage()
+{
+	echo ""
+	echo -e "  \033[1;33mMinify scripts using YUI compressor \033[0m"
+	echo -e "  \033[1;33mfor responsive-1120-16-pixel.css and responsive-1140-16-percent.css \033[0m"
+	echo -e "  Usage: system/bin/minify16 responsive16"
+	echo ""
+	echo ""
+}
+
+##
+# assets/contao/css
+##
+responsive16()
+{
+	version=$folder/assets/contao
+
+	# CSS responsive-1120-16-pixel-uncompressed.css
+	copyright="/* BugBuster: responsive-1120-16-pixel.css, LGPL license */"
+	file="responsive-1120-16-pixel-uncompressed.css"
+	echo "$copyright" > $version/css/${file/-uncompressed/}
+	$css $version/css/$file >> $version/css/${file/-uncompressed/}
+	echo "  Created $version/css/${file/-uncompressed/}"
+
+	# CSS responsive-1140-16-percent-uncompressed.css
+        copyright="/* BugBuster: responsive-1140-16-percent.css, LGPL license */"
+	file="responsive-1140-16-percent-uncompressed.css"
+	echo "$copyright" > $version/css/${file/-uncompressed/}
+	$css $version/css/$file >> $version/css/${file/-uncompressed/}
+	echo "  Created $version/css/${file/-uncompressed/}"
+
+
+}
+
+
+
+##
+# Dispatch
+##
+if [ "$1" == "" ]; then
+	usage
+else
+
+	# Get the installation path
+	folder=$(cd $(dirname "$0") && pwd)
+	folder=${folder/\/system\/bin/}
+
+	# Check whether java is available
+	if [ $(which java) == "" ]; then
+		echo -e "  \033[0;31mJava is required to run this script\033[0m"
+		exit 1
+	fi
+
+	# CSS minifier
+	css="java -jar $folder/system/bin/yuicompressor-2.4.6.jar --charset UTF-8"
+
+	# Execute all functions
+	if [ "$1" == "all" ]; then
+		typeset -F | while read line; do
+			func=${line/declare -f/}
+			if [ $func != "usage" ]; then
+				$func
+			fi
+		done
+	else
+		$1 #$2
+	fi
+
+	# Purge the assets/css cache folder
+	if [ -d "$folder/assets/css" ]; then
+		for i in `ls $folder/assets/css`; do
+			if ([ "$i" != "index.html" ] && [ "$i" != "basic.css" ] && [ "$i" != "default.css" ] && [ "$i" != "mobile.css" ] && [ "$i" != "print.css" ]); then
+				unlink $folder/assets/css/$i
+			fi
+		done
+	fi
+fi

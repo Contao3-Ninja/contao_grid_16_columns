@@ -1,17 +1,14 @@
 <?php  
 
 /**
- * Contao Open Source CMS
- * Copyright (C) 2005-2012 Leo Feyer
+ * Contao Open Source CMS, Copyright (C) 2005-2012 Leo Feyer
  *
- * Formerly known as TYPOlight Open Source CMS.
- *
- * PHP version 5
- * @copyright  Glen Langer 2012
- * @author     Glen Langer
+ * @copyright  Glen Langer 2012 <http://www.contao.glen-langer.de>
+ * @author     Glen Langer (BugBuster)
  * @package    grid_16_columns
  * @license    LGPL
  * @filesource
+ * @see        https://github.com/BugBuster1701/contao_grid_16_columns
  */
 
 $GLOBALS['TL_LANG']['tl_layout']['responsive-1140-16-percent.css'][0] = 'Responsive grid, percent, 1140px-16';
