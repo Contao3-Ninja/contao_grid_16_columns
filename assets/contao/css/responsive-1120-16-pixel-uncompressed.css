@@ -67,6 +67,15 @@
 .grid16 { width:1100px; }
 
 /**
+ * For 100% wide, without margin, not within an article
+ * e.g. for HTML Modules in header 
+ */
+.grid16_0 {
+    margin: 0 !important;
+    width: 100%;
+}
+
+/**
  * Floated articles can be 20 pixel wider (no margin)
  */
 .mod_article.grid1  { width:70px;  }
