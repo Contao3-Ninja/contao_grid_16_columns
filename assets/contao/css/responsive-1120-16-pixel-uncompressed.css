@@ -277,11 +277,11 @@
 
 	/**
 	 * Show all columns underneath each other
+	 * #3, #5
 	 */
-	*[class*="grid"],.inside>*[class*="grid"] {
-		float:none;
-		display:block;
-		width:auto;
-		margin:0;
+	*[class*="grid"] {
+		float:none !important;
+		display:block !important;
+		width:auto !important;
 	}
 }
