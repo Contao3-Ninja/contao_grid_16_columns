@@ -167,4 +167,11 @@
 		display:block !important;
 		width:auto !important;
 	}
+	
+	/**
+	 * Reduce the offset widths
+	 */
+	*[class*="offset"] {
+		margin-left:1%;
+	}
 }
