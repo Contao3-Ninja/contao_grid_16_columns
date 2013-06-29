@@ -30,7 +30,7 @@
  * Add a default margin to all content elements, so they align with the floatet
  * ones (otherwise you would have to add "grid16" to every element)
  */
-.mod_article>* {
+.mod_article *[class*="ce_"],.mod_article *[class*="mod_"] {
 	margin-left:1%;
 	margin-right:1%;
 }
@@ -98,21 +98,21 @@
 /**
  * Default offset widths
  */
-.offset1  { margin-left:7.25%;  }
-.offset2  { margin-left:13.5%;  }
-.offset3  { margin-left:19.75%; }
-.offset4  { margin-left:26%;    }
-.offset5  { margin-left:32.25%; }
-.offset6  { margin-left:38.5%;  }
-.offset7  { margin-left:44.75%; }
-.offset8  { margin-left:51%;    }
-.offset9  { margin-left:57.25%; }
-.offset10 { margin-left:63.5%;  }
-.offset11 { margin-left:69.75%; }
-.offset12 { margin-left:76%;    }
-.offset13 { margin-left:82.25%; }
-.offset14 { margin-left:88.5%;  }
-.offset15 { margin-left:94.75%; }
+.offset1  { margin-left:7.25%  !important; }
+.offset2  { margin-left:13.5%  !important; }
+.offset3  { margin-left:19.75% !important; }
+.offset4  { margin-left:26%    !important; }
+.offset5  { margin-left:32.25% !important; }
+.offset6  { margin-left:38.5%  !important; }
+.offset7  { margin-left:44.75% !important; }
+.offset8  { margin-left:51%    !important; }
+.offset9  { margin-left:57.25% !important; }
+.offset10 { margin-left:63.5%  !important; }
+.offset11 { margin-left:69.75% !important; }
+.offset12 { margin-left:76%    !important; }
+.offset13 { margin-left:82.25% !important; }
+.offset14 { margin-left:88.5%  !important; }
+.offset15 { margin-left:94.75% !important; }
 
 
 /**
@@ -172,6 +172,6 @@
 	 * Reduce the offset widths
 	 */
 	*[class*="offset"] {
-		margin-left:1%;
+		margin-left:1% !important;
 	}
 }

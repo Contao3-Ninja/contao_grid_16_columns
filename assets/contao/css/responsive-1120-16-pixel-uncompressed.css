@@ -30,7 +30,7 @@
  * Add a default margin to all content elements, so they align with the floatet
  * ones (otherwise you would have to add "grid12" to every element)
  */
-.mod_article>* {
+.mod_article *[class*="ce_"],.mod_article *[class*="mod_"] {
 	margin-left:10px;
 	margin-right:10px;
 }
@@ -98,21 +98,21 @@
 /**
  * Default offset widths
  */
-.offset1  { margin-left:80px;  } 
-.offset2  { margin-left:150px; } 
-.offset3  { margin-left:220px; } 
-.offset4  { margin-left:290px; } 
-.offset5  { margin-left:360px; } 
-.offset6  { margin-left:430px; } 
-.offset7  { margin-left:500px; } 
-.offset8  { margin-left:570px; } 
-.offset9  { margin-left:640px; } 
-.offset10 { margin-left:710px; } 
-.offset11 { margin-left:780px; } 
-.offset12 { margin-left:850px; } 
-.offset13 { margin-left:920px; } 
-.offset14 { margin-left:990px; } 
-.offset15 { margin-left:1060px; }
+.offset1  { margin-left:80px   !important; } 
+.offset2  { margin-left:150px  !important; } 
+.offset3  { margin-left:220px  !important; } 
+.offset4  { margin-left:290px  !important; } 
+.offset5  { margin-left:360px  !important; } 
+.offset6  { margin-left:430px  !important; } 
+.offset7  { margin-left:500px  !important; } 
+.offset8  { margin-left:570px  !important; } 
+.offset9  { margin-left:640px  !important; } 
+.offset10 { margin-left:710px  !important; } 
+.offset11 { margin-left:780px  !important; } 
+.offset12 { margin-left:850px  !important; } 
+.offset13 { margin-left:920px  !important; } 
+.offset14 { margin-left:990px  !important; } 
+.offset15 { margin-left:1060px !important; }
 
 
 /**
@@ -171,21 +171,21 @@
 	/**
 	 * Reduce the offset widths
 	 */
-	.offset1  { margin-left:70px; }
-	.offset2  { margin-left:130px; }
-	.offset3  { margin-left:190px; }
-	.offset4  { margin-left:250px; }
-	.offset5  { margin-left:310px; }
-	.offset6  { margin-left:370px; }
-	.offset7  { margin-left:430px; }
-	.offset8  { margin-left:490px; }
-	.offset9  { margin-left:550px; }
-	.offset10 { margin-left:610px; }
-	.offset11 { margin-left:670px; }
-	.offset12 { margin-left:730px; }
-	.offset13 { margin-left:790px; }
-	.offset14 { margin-left:850px; }
-	.offset15 { margin-left:910px; }
+	.offset1  { margin-left:70px  !important; }
+	.offset2  { margin-left:130px !important; }
+	.offset3  { margin-left:190px !important; }
+	.offset4  { margin-left:250px !important; }
+	.offset5  { margin-left:310px !important; }
+	.offset6  { margin-left:370px !important; }
+	.offset7  { margin-left:430px !important; }
+	.offset8  { margin-left:490px !important; }
+	.offset9  { margin-left:550px !important; }
+	.offset10 { margin-left:610px !important; }
+	.offset11 { margin-left:670px !important; }
+	.offset12 { margin-left:730px !important; }
+	.offset13 { margin-left:790px !important; }
+	.offset14 { margin-left:850px !important; }
+	.offset15 { margin-left:910px !important; }
 }
 
 
@@ -245,21 +245,21 @@
 	/**
 	 * Reduce the offset widths
 	 */
-	.offset1  { margin-left:58px; }
-	.offset2  { margin-left:106px; }
-	.offset3  { margin-left:154px; }
-	.offset4  { margin-left:202px; }
-	.offset5  { margin-left:250px; }
-	.offset6  { margin-left:298px; }
-	.offset7  { margin-left:346px; }
-	.offset8  { margin-left:394px; }
-	.offset9  { margin-left:442px; }
-	.offset10 { margin-left:490px; }
-	.offset11 { margin-left:538px; }
-	.offset12 { margin-left:586px; }
-	.offset13 { margin-left:634px; }
-	.offset14 { margin-left:682px; }
-	.offset15 { margin-left:730px; }
+	.offset1  { margin-left:58px  !important; }
+	.offset2  { margin-left:106px !important; }
+	.offset3  { margin-left:154px !important; }
+	.offset4  { margin-left:202px !important; }
+	.offset5  { margin-left:250px !important; }
+	.offset6  { margin-left:298px !important; }
+	.offset7  { margin-left:346px !important; }
+	.offset8  { margin-left:394px !important; }
+	.offset9  { margin-left:442px !important; }
+	.offset10 { margin-left:490px !important; }
+	.offset11 { margin-left:538px !important; }
+	.offset12 { margin-left:586px !important; }
+	.offset13 { margin-left:634px !important; }
+	.offset14 { margin-left:682px !important; }
+	.offset15 { margin-left:730px !important; }
 }
 
 /**
@@ -289,7 +289,7 @@
 	 * Reduce the offset widths
 	 */
 	*[class*="offset"] {
-		margin-left:10px;
+		margin-left:10px !important;
 	}
 
 }
