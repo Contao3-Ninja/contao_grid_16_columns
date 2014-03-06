@@ -7,6 +7,8 @@ Adds a responsive 16-column pixel/percental grid with 1120px/1140px in the layou
 
 ## Branches
 
-**master** This is the current stable branch for Contao 3.1
+**master** This is the current stable branch for Contao 3.2
+
+**master31** This is the current stable branch for Contao 3.1
 
 **master30** This is the current stable branch for Contao 3.0.x
