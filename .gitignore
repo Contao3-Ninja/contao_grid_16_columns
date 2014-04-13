@@ -1,4 +1,5 @@
 get-compressed-files.bash
+put-extension-in-test-installation.bash
 .buildpath
 .project
 .settings/

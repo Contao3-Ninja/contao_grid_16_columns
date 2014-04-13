@@ -1,0 +1,115 @@
+/**
+ * Contao Open Source CMS, Copyright (C) 2005-2014 Leo Feyer
+ * 
+ * Percent Grid with 1140 pixel
+ * @copyright  Glen Langer (BugBuster) 2012..2014
+ * @author     BugBuster
+ * @package    contaogrid-1140-16
+ * @license    LGPL 
+ */
+
+/**
+ * Make the wrapping container 1140 pixel wide
+ */
+#wrapper {
+	width:1140px;
+	margin:0 auto;
+}
+
+/**
+ * Set the default margin of the grid columns
+ */
+*[class*="grid"] {
+	float:left;
+	display:inline;
+	margin-right:1%;
+	margin-left:1%;
+}
+
+/**
+ * Add a default margin to all content elements, so they align with the floatet
+ * ones (otherwise you would have to add "grid16" to every element)
+ */
+.mod_article *[class*="ce_"],.mod_article *[class*="mod_"] {
+	margin-left:1%;
+	margin-right:1%;
+}
+
+/**
+ * Remove the margin from floated articles, because the margin is already
+ * applied to its content elements (see above)
+ */
+.mod_article.grid1,.mod_article.grid2,.mod_article.grid3,.mod_article.grid4,.mod_article.grid5,.mod_article.grid6,
+.mod_article.grid7,.mod_article.grid8,.mod_article.grid9,.mod_article.grid10,.mod_article.grid11,.mod_article.grid12,
+.mod_article.grid13,.mod_article.grid14,.mod_article.grid15,.mod_article.grid16 {
+	margin-left:0;
+	margin-right:0;
+}
+
+/**
+ * Grid column widths
+ */
+.grid1  { width:4.25%;  }
+.grid2  { width:10.5%;  }
+.grid3  { width:16.75%; }
+.grid4  { width:23%;    }
+.grid5  { width:29.25%; }
+.grid6  { width:35.5%;  }
+.grid7  { width:41.75%; }
+.grid8  { width:48%;    }
+.grid9  { width:54.25%; }
+.grid10 { width:60.5%;  }
+.grid11 { width:66.75%; }
+.grid12 { width:73%;    }
+.grid13 { width:79.25%; }
+.grid14 { width:85.5%;  }
+.grid15 { width:91.75%; }
+.grid16 { width:98%;    }
+
+/**
+ * For 100% wide, without margin, not within an article
+ * e.g. for HTML Modules in header 
+ */
+.grid16_0 {
+	margin: 0 !important;
+	width: 100%;
+}
+
+/**
+ * Floated articles can be 2% wider (no margin)
+ */
+.mod_article.grid1  { width:6.25%;  }
+.mod_article.grid2  { width:12.5%;  }
+.mod_article.grid3  { width:18.75%; }
+.mod_article.grid4  { width:25%;    }
+.mod_article.grid5  { width:31.25%; }
+.mod_article.grid6  { width:37.5%;  }
+.mod_article.grid7  { width:43.75%; }
+.mod_article.grid8  { width:50%;    }
+.mod_article.grid9  { width:56.25%; }
+.mod_article.grid10 { width:62.5%;  }
+.mod_article.grid11 { width:68.75%; }
+.mod_article.grid12 { width:75%;    }
+.mod_article.grid13 { width:81.25%; }
+.mod_article.grid14 { width:87.5%;  }
+.mod_article.grid15 { width:93.75%; }
+.mod_article.grid16 { width:100%;   }
+
+/**
+ * Default offset widths
+ */
+.offset1  { margin-left:7.25%  !important; }
+.offset2  { margin-left:13.5%  !important; }
+.offset3  { margin-left:19.75% !important; }
+.offset4  { margin-left:26%    !important; }
+.offset5  { margin-left:32.25% !important; }
+.offset6  { margin-left:38.5%  !important; }
+.offset7  { margin-left:44.75% !important; }
+.offset8  { margin-left:51%    !important; }
+.offset9  { margin-left:57.25% !important; }
+.offset10 { margin-left:63.5%  !important; }
+.offset11 { margin-left:69.75% !important; }
+.offset12 { margin-left:76%    !important; }
+.offset13 { margin-left:82.25% !important; }
+.offset14 { margin-left:88.5%  !important; }
+.offset15 { margin-left:94.75% !important; }

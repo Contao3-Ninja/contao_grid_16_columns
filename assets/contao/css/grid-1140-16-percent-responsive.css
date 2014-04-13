@@ -1,0 +1,2 @@
+/* BugBuster: grid-1140-16-percent-responsive.css, LGPL license */
+@media(min-width:980px) and (max-width:1160px){#wrapper{width:960px}}@media(min-width:768px) and (max-width:979px){#wrapper{width:768px}}@media(max-width:767px){#wrapper{width:auto}*[class*="grid"]{float:none !important;display:block !important;width:auto !important}*[class*="offset"]{margin-left:1% !important}}

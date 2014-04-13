@@ -1,0 +1,188 @@
+/**
+ * Contao Open Source CMS, Copyright (C) 2005-2012 Leo Feyer
+ * 
+ * Pixel Grid with 1120 pixel, responsive part
+ * @copyright  Glen Langer (BugBuster) 2012..2014
+ * @author     BugBuster
+ * @package    contaogrid-1120-16
+ * @license    LGPL 
+ */
+
+/**
+ * Reduce the overall width and the width of the grid columns if the screen
+ * width is less than 1140px
+ */
+@media (min-width:980px) and (max-width:1140px)
+{
+	/**
+	 * Reduce the overall width
+	 */
+	#wrapper {
+		width:960px;
+	}
+
+	/**
+	 * Reduce the grid column widths
+	 */
+	.grid1  { width:40px; }
+	.grid2  { width:100px; }
+	.grid3  { width:160px; }
+	.grid4  { width:220px; }
+	.grid5  { width:280px; }
+	.grid6  { width:340px; }
+	.grid7  { width:400px; }
+	.grid8  { width:460px; }
+	.grid9  { width:520px; }
+	.grid10 { width:580px; }
+	.grid11 { width:640px; }
+	.grid12 { width:700px; }
+	.grid13 { width:760px; }
+	.grid14 { width:820px; }
+	.grid15 { width:880px; }
+	.grid16 { width:940px; }
+
+	/**
+	 * Floated articles can be 20 pixel wider (no margin)
+	 */
+	.mod_article.grid1  { width:60px; }
+	.mod_article.grid2  { width:120px; }
+	.mod_article.grid3  { width:180px; }
+	.mod_article.grid4  { width:240px; }
+	.mod_article.grid5  { width:300px; }
+	.mod_article.grid6  { width:360px; }
+	.mod_article.grid7  { width:420px; }
+	.mod_article.grid8  { width:480px; }
+	.mod_article.grid9  { width:540px; }
+	.mod_article.grid10 { width:600px; }
+	.mod_article.grid11 { width:660px; }
+	.mod_article.grid12 { width:720px; }
+	.mod_article.grid13 { width:780px; }
+	.mod_article.grid14 { width:840px; }
+	.mod_article.grid15 { width:900px; }
+	.mod_article.grid16 { width:960px; }
+
+	/**
+	 * Reduce the offset widths
+	 */
+	.offset1  { margin-left:70px  !important; }
+	.offset2  { margin-left:130px !important; }
+	.offset3  { margin-left:190px !important; }
+	.offset4  { margin-left:250px !important; }
+	.offset5  { margin-left:310px !important; }
+	.offset6  { margin-left:370px !important; }
+	.offset7  { margin-left:430px !important; }
+	.offset8  { margin-left:490px !important; }
+	.offset9  { margin-left:550px !important; }
+	.offset10 { margin-left:610px !important; }
+	.offset11 { margin-left:670px !important; }
+	.offset12 { margin-left:730px !important; }
+	.offset13 { margin-left:790px !important; }
+	.offset14 { margin-left:850px !important; }
+	.offset15 { margin-left:910px !important; }
+}
+
+
+/**
+ * Reduce the overall width and the width of the grid columns if the screen
+ * width is less than 980px (e.g. on a portrait tablet)
+ */
+@media (min-width:768px) and (max-width:979px)
+{
+	/**
+	 * Reduce the overall width
+	 */
+	#wrapper {
+		width:768px;
+	}
+
+	/**
+	 * Reduce the grid column widths
+	 */
+	.grid1  { width:28px; }
+	.grid2  { width:76px; }
+	.grid3  { width:124px; }
+	.grid4  { width:172px; }
+	.grid5  { width:220px; }
+	.grid6  { width:268px; }
+	.grid7  { width:316px; }
+	.grid8  { width:364px; }
+	.grid9  { width:412px; }
+	.grid10 { width:460px; }
+	.grid11 { width:508px; }
+	.grid12 { width:556px; }
+	.grid13 { width:604px; }
+	.grid14 { width:652px; }
+	.grid15 { width:700px; }
+	.grid16 { width:748px; }
+
+	/**
+	 * Floated articles can be 20 pixel wider (no margin)
+	 */
+	.mod_article.grid1  { width:48px; }
+	.mod_article.grid2  { width:96px; }
+	.mod_article.grid3  { width:144px; }
+	.mod_article.grid4  { width:192px; }
+	.mod_article.grid5  { width:240px; }
+	.mod_article.grid6  { width:288px; }
+	.mod_article.grid7  { width:336px; }
+	.mod_article.grid8  { width:384px; }
+	.mod_article.grid9  { width:432px; }
+	.mod_article.grid10 { width:480px; }
+	.mod_article.grid11 { width:528px; }
+	.mod_article.grid12 { width:576px; }
+	.mod_article.grid13 { width:624px; }
+	.mod_article.grid14 { width:672px; }
+	.mod_article.grid15 { width:720px; }
+	.mod_article.grid16 { width:768px; }
+
+	/**
+	 * Reduce the offset widths
+	 */
+	.offset1  { margin-left:58px  !important; }
+	.offset2  { margin-left:106px !important; }
+	.offset3  { margin-left:154px !important; }
+	.offset4  { margin-left:202px !important; }
+	.offset5  { margin-left:250px !important; }
+	.offset6  { margin-left:298px !important; }
+	.offset7  { margin-left:346px !important; }
+	.offset8  { margin-left:394px !important; }
+	.offset9  { margin-left:442px !important; }
+	.offset10 { margin-left:490px !important; }
+	.offset11 { margin-left:538px !important; }
+	.offset12 { margin-left:586px !important; }
+	.offset13 { margin-left:634px !important; }
+	.offset14 { margin-left:682px !important; }
+	.offset15 { margin-left:730px !important; }
+}
+
+/**
+ * Remove all floats and fixed widths if the screen width is less than 768
+ * pixel (e.g. on a mobile phone)
+ */
+@media (max-width:767px)
+{
+	/**
+	 * Remove the overall width
+	 */
+	#wrapper {
+		width:auto;
+	}
+
+	/**
+	 * Show all columns underneath each other
+	 * #3, #5
+	 */
+	*[class*="grid"] {
+		float:none !important;
+		display:block !important;
+		width:auto !important;
+	}
+
+	/**
+	 * Reduce the offset widths
+	 */
+	*[class*="offset"] {
+		margin-left:10px !important;
+	}
+
+}

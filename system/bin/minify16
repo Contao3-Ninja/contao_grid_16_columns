@@ -1,13 +1,14 @@
 #!/bin/bash
 
 ##
-# Usage
+# Usage in Contao 3.3.beta1
 ##
 usage()
 {
 	echo ""
-	echo -e "  \033[1;33mMinify scripts using YUI compressor \033[0m"
-	echo -e "  \033[1;33mfor responsive-1120-16-pixel.css and responsive-1140-16-percent.css \033[0m"
+	echo -e "  \033[1;33mMinify scripts using YUI compressor for \033[0m"
+	echo -e "  \033[grid-1120-16-pixel.css and grid-1140-16-percent.css \033[0m"
+	echo -e "  \033[1;33mgrid-1120-16-pixel-responsive.css and grid-1140-16-percent-responsive.css \033[0m"
 	echo -e "  Usage: system/bin/minify16 responsive16"
 	echo ""
 	echo ""
@@ -20,21 +21,33 @@ responsive16()
 {
 	version=$folder/assets/contao
 
-	# CSS responsive-1120-16-pixel-uncompressed.css
-	copyright="/* BugBuster: responsive-1120-16-pixel.css, LGPL license */"
-	file="responsive-1120-16-pixel-uncompressed.css"
+	# CSS grid-1120-16-pixel-uncompressed.css
+	copyright="/* BugBuster: grid-1120-16-pixel.css, LGPL license */"
+	file="grid-1120-16-pixel-uncompressed.css"
 	echo "$copyright" > $version/css/${file/-uncompressed/}
 	$css $version/css/$file >> $version/css/${file/-uncompressed/}
 	echo "  Created $version/css/${file/-uncompressed/}"
 
-	# CSS responsive-1140-16-percent-uncompressed.css
-        copyright="/* BugBuster: responsive-1140-16-percent.css, LGPL license */"
-	file="responsive-1140-16-percent-uncompressed.css"
+	# CSS grid-1140-16-percent-uncompressed.css
+        copyright="/* BugBuster: grid-1140-16-percent.css, LGPL license */"
+	file="grid-1140-16-percent-uncompressed.css"
 	echo "$copyright" > $version/css/${file/-uncompressed/}
 	$css $version/css/$file >> $version/css/${file/-uncompressed/}
 	echo "  Created $version/css/${file/-uncompressed/}"
 
+	# CSS grid-1120-16-pixel-responsive-uncompressed.css
+	copyright="/* BugBuster: grid-1120-16-pixel-responsive.css, LGPL license */"
+	file="grid-1120-16-pixel-responsive-uncompressed.css"
+	echo "$copyright" > $version/css/${file/-uncompressed/}
+	$css $version/css/$file >> $version/css/${file/-uncompressed/}
+	echo "  Created $version/css/${file/-uncompressed/}"
 
+	# CSS grid-1140-16-percent-responsive-uncompressed.css
+    copyright="/* BugBuster: grid-1140-16-percent-responsive.css, LGPL license */"
+	file="grid-1140-16-percent-responsive-uncompressed.css"
+	echo "$copyright" > $version/css/${file/-uncompressed/}
+	$css $version/css/$file >> $version/css/${file/-uncompressed/}
+	echo "  Created $version/css/${file/-uncompressed/}"
 }
 
 
@@ -57,7 +70,7 @@ else
 	fi
 
 	# CSS minifier
-	css="java -jar $folder/system/bin/yuicompressor-2.4.6.jar --charset UTF-8"
+	css="java -jar $folder/system/bin/yuicompressor-2.4.8.jar --charset UTF-8"
 
 	# Execute all functions
 	if [ "$1" == "all" ]; then

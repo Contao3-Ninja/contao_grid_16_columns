@@ -1,9 +1,9 @@
 <?php  
 
 /**
- * Contao Open Source CMS, Copyright (C) 2005-2012 Leo Feyer
+ * Contao Open Source CMS, Copyright (C) 2005-2014 Leo Feyer
  *
- * @copyright  Glen Langer 2012 <http://www.contao.glen-langer.de>
+ * @copyright  Glen Langer 2012..2014 <http://www.contao.glen-langer.de>
  * @author     Glen Langer (BugBuster)
  * @package    grid_16_columns
  * @license    LGPL
@@ -68,7 +68,7 @@ class Grid1140Dca extends \BackendModule
     	if ($strName == 'tl_layout')
     	{
     		//add the new css files
-    		array_push($GLOBALS['TL_DCA']['tl_layout']['fields']['framework']['options'], 'responsive-1140-16-percent.css', 'responsive-1120-16-pixel.css');
+    		array_push($GLOBALS['TL_DCA']['tl_layout']['fields']['framework']['options'], 'grid-1140-16-percent.css', 'grid-1140-16-percent-responsive.css', 'grid-1120-16-pixel.css', 'grid-1120-16-pixel-responsive.css');
     	}
         if ($strName == 'tl_page')
         {
