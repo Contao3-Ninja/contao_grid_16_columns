@@ -1,4 +1,6 @@
 get-compressed-files.bash
+put-extension-in-test-installation.bash
+killme.txt
 .buildpath
 .project
 .settings/

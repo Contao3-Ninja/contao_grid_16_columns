@@ -1,9 +1,9 @@
 <?php  
 
 /**
- * Contao Open Source CMS, Copyright (C) 2005-2012 Leo Feyer
+ * Contao Open Source CMS, Copyright (C) 2005-2014 Leo Feyer
  *
- * @copyright  Glen Langer 2012 <http://www.contao.glen-langer.de>
+ * @copyright  Glen Langer 2012..2014 <http://www.contao.glen-langer.de>
  * @author     Glen Langer (BugBuster)
  * @package    grid_16_columns
  * @license    LGPL
