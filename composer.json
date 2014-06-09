@@ -36,7 +36,7 @@
 			},
 			"files":{
 				"assets/contao/css":"assets/contao/css",
-				"system/bin":"system/bin",
+				"system/bin":"system/bin"
 			},
 			"runonce":[
 				"runonce/runonce.php"
