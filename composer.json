@@ -32,9 +32,11 @@
 	"extra":{
 		"contao":{
 			"sources":{
+				"system/modules/grid_16_columns":"system/modules/grid_16_columns"
+			},
+			"files":{
 				"assets/contao/css":"assets/contao/css",
 				"system/bin":"system/bin",
-				"system/modules/grid_16_columns":"system/modules/grid_16_columns"
 			},
 			"runonce":[
 				"runonce/runonce.php"
