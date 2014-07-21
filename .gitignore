@@ -4,3 +4,5 @@ killme.txt
 .buildpath
 .project
 .settings/
+# Transifex
+/.tx/

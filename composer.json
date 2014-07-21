@@ -38,6 +38,12 @@
 				"assets/contao/css":"assets/contao/css",
 				"system/bin":"system/bin"
 			},
+			"transifex": {
+				"project": "contao-grid_16_columns",
+				"prefix": "master-",
+				"languages_cto": "system/modules/grid_16_columns/languages",
+				"languages_tx": ".tx"
+			},
 			"runonce":[
 				"runonce/runonce.php"
 			]

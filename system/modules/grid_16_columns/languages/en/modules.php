@@ -1,14 +1,17 @@
-<?php  
-
+<?php
 /**
- * Contao Open Source CMS, Copyright (C) 2005-2014 Leo Feyer
+ * Translations are managed using Transifex. To create a new translation
+ * or to help to maintain an existing one, please register at transifex.com.
  *
- * @copyright  Glen Langer 2012..2014 <http://www.contao.glen-langer.de>
- * @author     Glen Langer (BugBuster)
- * @package    grid_16_columns
- * @license    LGPL
- * @filesource
- * @see        https://github.com/BugBuster1701/contao_grid_16_columns
+ * @link http://help.transifex.com/intro/translating.html
+ * @link https://www.transifex.com/projects/p/contao-grid_16_columns/language/en/
+ *
+ * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
+ *
+ * last-updated: 2014-06-08T22:51:20+02:00
  */
 
-$GLOBALS['TL_LANG']['MOD']['grid_16_columns'] = array('Contao Grid with 16 columns','Contao pixel and percent grid with 16 columns');
+
+$GLOBALS['TL_LANG']['MOD']['grid_16_columns']['0'] = 'Contao Grid with 16 columns';
+$GLOBALS['TL_LANG']['MOD']['grid_16_columns']['1'] = 'Contao pixel and percent grid with 16 columns';
+
