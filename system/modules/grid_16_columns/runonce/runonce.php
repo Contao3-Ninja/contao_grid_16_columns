@@ -1,6 +1,5 @@
 <?php 
-
-@error_reporting(0); @ini_set("display_errors", 0);  
+  
 /**
  * Contao Open Source CMS, Copyright (C) 2005-2014 Leo Feyer
  *
@@ -43,20 +42,20 @@ class GridRunonceJob extends Controller
 	            {
 	                $new[] = 'grid-1140-16-percent.css';
 	                $new[] = 'grid-1140-16-percent-responsive.css';
-	                $migration=true;
+	                $migration = true;
 	                continue;
 	            }
 	            if ($css == 'responsive-1120-16-pixel.css')
 	            {
 	                $new[] = 'grid-1120-16-pixel.css';
 	                $new[] = 'grid-1120-16-pixel-responsive.css';
-	                $migration=true;
+	                $migration = true;
 	                continue;
 	            }
 	            $new[] = $css;
 	        }
 	        #Migration nötig? Dann zurück schreiben in DB
-	        if ($migration == true) 
+	        if ($migration === true) 
 	        {
 	            $this->Database->prepare("UPDATE `tl_layout` SET framework=? WHERE id=?")
 	                           ->execute(serialize($new), $objLayout->id);
