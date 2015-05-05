@@ -1,9 +1,9 @@
 <?php  
 
 /**
- * Contao Open Source CMS, Copyright (C) 2005-2014 Leo Feyer
+ * Contao Open Source CMS, Copyright (C) 2005-2015 Leo Feyer
  *
- * @copyright  Glen Langer 2012..2014 <http://www.contao.glen-langer.de>
+ * @copyright  Glen Langer 2012..2015 <http://contao.ninja>
  * @author     Glen Langer (BugBuster)
  * @package    grid_16_columns
  * @license    LGPL
@@ -63,7 +63,7 @@ class Grid1140Dca extends \BackendModule
      * Hook loadDataContainer
      * @param string $strName    dca
      */
-    public function LoadDataContainerGrid1140($strName)
+    public function loadDataContainerGrid1140($strName)
     {
     	if ($strName == 'tl_layout')
     	{
