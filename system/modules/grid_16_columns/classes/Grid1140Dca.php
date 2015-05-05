@@ -51,7 +51,7 @@ class Grid1140Dca extends \BackendModule
      */
     public static function getInstance()
     {
-        if (self::$instance == null)
+        if (self::$instance === null)
         {
             self::$instance = new Grid1140Dca();
         }
