@@ -153,6 +153,25 @@
 	.offset13 { margin-left:634px !important; }
 	.offset14 { margin-left:682px !important; }
 	.offset15 { margin-left:730px !important; }
+	
+	/**
+ 	 * Floated articles do not have margin
+ 	 */
+	.mod_article.offset1  { width:48px   !important; }
+	.mod_article.offset2  { width:96px   !important; }
+	.mod_article.offset3  { width:144px  !important; }
+	.mod_article.offset4  { width:192px  !important; }
+	.mod_article.offset5  { width:240px  !important; }
+	.mod_article.offset6  { width:288px  !important; }
+	.mod_article.offset7  { width:336px  !important; }
+	.mod_article.offset8  { width:384px  !important; }
+	.mod_article.offset9  { width:432px  !important; }
+	.mod_article.offset10 { width:480px  !important; }
+	.mod_article.offset11 { width:528px  !important; }
+	.mod_article.offset12 { width:576px  !important; }
+	.mod_article.offset13 { width:624px  !important; }
+	.mod_article.offset14 { width:672px  !important; }
+	.mod_article.offset15 { width:720px  !important; }	
 }
 
 /**
