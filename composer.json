@@ -32,11 +32,16 @@
 	"extra":{
 		"contao":{
 			"sources":{
-				"system/modules/grid_16_columns":"system/modules/grid_16_columns"
-			},
-			"files":{
-				"assets/contao/css":"assets/contao/css",
-				"system/bin":"system/bin"
+				"system/modules/grid_16_columns": "system/modules/grid_16_columns",
+				"assets/contao/css/grid-1120-16-pixel-responsive-uncompressed.css": "assets/contao/css/grid-1120-16-pixel-responsive-uncompressed.css",
+				"assets/contao/css/grid-1120-16-pixel-responsive.css": "assets/contao/css/grid-1120-16-pixel-responsive.css",
+				"assets/contao/css/grid-1120-16-pixel-uncompressed.css": "assets/contao/css/grid-1120-16-pixel-uncompressed.css",
+				"assets/contao/css/grid-1120-16-pixel.css": "assets/contao/css/grid-1120-16-pixel.css",
+				"assets/contao/css/grid-1140-16-percent-responsive-uncompressed.css": "assets/contao/css/grid-1140-16-percent-responsive-uncompressed.css",
+				"assets/contao/css/grid-1140-16-percent-responsive.css": "assets/contao/css/grid-1140-16-percent-responsive.css",
+				"assets/contao/css/grid-1140-16-percent-uncompressed.css": "assets/contao/css/grid-1140-16-percent-uncompressed.css",
+				"assets/contao/css/grid-1140-16-percent.css": "assets/contao/css/grid-1140-16-percent.css",
+				"system/bin/minify16":"system/bin/minify16"
 			},
 			"transifex": {
 				"project": "contao-grid_16_columns",
