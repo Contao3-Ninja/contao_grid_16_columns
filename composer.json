@@ -50,7 +50,7 @@
 				"languages_tx": ".tx"
 			},
 			"runonce":[
-				"runonce/runonce.php"
+				"system/modules/grid_16_columns/runonce/runonce.php"
 			]
 		}
 	}
