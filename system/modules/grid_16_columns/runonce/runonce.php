@@ -84,7 +84,15 @@ class GridRunonceJob extends Controller
 	    // Recreate the internal style sheets
 	    // Also empty the page cache so there are no links to deleted scripts
 	    $this->import('Automator');
-	    $this->Automator->purgeScriptCache();
+	    try 
+	    {
+	        $this->Automator->purgeScriptCache();
+	    } 
+	    catch (Exception $e) 
+	    {
+	        $this->Automator->purgePageCache();
+	    }
+	    
 	    $strText = 'Purged the script cache';
 	    $this->Database->prepare("INSERT INTO `tl_log` (tstamp, source, action, username, text, func, ip, browser) VALUES(?, ?, ?, ?, ?, ?, ?, ?)")
                         ->execute(time(), 'BE', 'CONFIGURATION', '', $strText, 'Grid 16 Columns Modul Install/Update, Purge Script Cache', '127.0.0.1', 'NoBrowser');
