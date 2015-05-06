@@ -117,18 +117,18 @@
 /**
  * Floated articles do not have margin
  */
-.mod_article.offset1  { width:6.25%  !important; }
-.mod_article.offset2  { width:12.5%  !important; }
-.mod_article.offset3  { width:18.75% !important; }
-.mod_article.offset4  { width:25%    !important; }
-.mod_article.offset5  { width:31.25% !important; }
-.mod_article.offset6  { width:37.5%  !important; }
-.mod_article.offset7  { width:43.75% !important; }
-.mod_article.offset8  { width:50%    !important; }
-.mod_article.offset9  { width:56.25% !important; }
-.mod_article.offset10 { width:62.5%  !important; }
-.mod_article.offset11 { width:68.75% !important; }
-.mod_article.offset12 { width:75%    !important; }
-.mod_article.offset13 { width:81.25% !important; }
-.mod_article.offset14 { width:87.5%  !important; }
-.mod_article.offset15 { width:93.75% !important; }
+.mod_article.offset1  { margin-left:6.25%  !important; }
+.mod_article.offset2  { margin-left:12.5%  !important; }
+.mod_article.offset3  { margin-left:18.75% !important; }
+.mod_article.offset4  { margin-left:25%    !important; }
+.mod_article.offset5  { margin-left:31.25% !important; }
+.mod_article.offset6  { margin-left:37.5%  !important; }
+.mod_article.offset7  { margin-left:43.75% !important; }
+.mod_article.offset8  { margin-left:50%    !important; }
+.mod_article.offset9  { margin-left:56.25% !important; }
+.mod_article.offset10 { margin-left:62.5%  !important; }
+.mod_article.offset11 { margin-left:68.75% !important; }
+.mod_article.offset12 { margin-left:75%    !important; }
+.mod_article.offset13 { margin-left:81.25% !important; }
+.mod_article.offset14 { margin-left:87.5%  !important; }
+.mod_article.offset15 { margin-left:93.75% !important; }
