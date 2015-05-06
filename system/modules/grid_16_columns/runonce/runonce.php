@@ -29,6 +29,12 @@ class GridRunonceJob extends Controller
 	
 	public function run()
 	{
+	    $this->migration();
+	    $this->purgeCssCache();
+	}
+	
+	public function migration()
+	{
 	    $objLayout = $this->Database->execute("SELECT id,name,framework FROM `tl_layout`");
 	    #durch jedes Layout gehen
 	    while ($objLayout->next())
@@ -66,6 +72,23 @@ class GridRunonceJob extends Controller
 	    }
 		
 	} //function run
+	
+	/**
+	 * Purge the script cache,
+	 * important when updating to activate the new css files
+	 */
+	public function purgeCssCache()
+	{
+	    // purge the script cache
+	    // assets/js and assets/css
+	    // Recreate the internal style sheets
+	    // Also empty the page cache so there are no links to deleted scripts
+	    $this->import('Automator');
+	    $this->Automator->purgeScriptCache();
+	    $strText = 'Purged the script cache';
+	    $this->Database->prepare("INSERT INTO `tl_log` (tstamp, source, action, username, text, func, ip, browser) VALUES(?, ?, ?, ?, ?, ?, ?, ?)")
+                        ->execute(time(), 'BE', 'CONFIGURATION', '', $strText, 'Grid 16 Columns Modul Install/Update, Purge Script Cache', '127.0.0.1', 'NoBrowser');
+	}
 } // class
 
 $objGridRunonceJob = new GridRunonceJob();
