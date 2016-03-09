@@ -19,9 +19,9 @@
 		"forum":"https://community.contao.org/de/forumdisplay.php?119-Sonstige-Erweiterungen"
 	},
 	"require":{
-		"php":">=5.3",
-		"contao/core":">=3.3,<4",
-		"contao-community-alliance/composer-plugin": "*"
+		"php":">=5.4",
+		"contao/core-bundle": "~3.5 || ~4.1",
+		"contao-community-alliance/composer-plugin": "~2.4 || ~3.0"
 	},
 	"autoload":{
 		"classmap":[""]
@@ -30,6 +30,9 @@
 		"contao-legacy/grid_16_columns":"*"
 	},
 	"extra":{
+		"branch-alias": {
+			"dev-develop4": "4.0.x-dev"
+		},
 		"contao":{
 			"sources":{
 				"system/modules/grid_16_columns": "system/modules/grid_16_columns",
